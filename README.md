@@ -13,11 +13,13 @@ Lian'an(联安) is a Minecraft enthusiast from China. It has been three years si
 ## Server Information
 
 > Server address: **sqgmc.com**
+
 Server port: **19132**
 
 ## Server Website
 
 Shangqingge server official website: [ShangQingGe server official website](https://www.unsc.dev/ "ShangQingGe server official website")
+
 Shangqingge server Chinese network: [上清阁服务器中文网](https://mc.unsc.dev/ "上清阁服务器中文网")
 
 ## Server characteristicsServer characteristics
