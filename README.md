@@ -13,7 +13,6 @@ Lian'an(联安) is a Minecraft enthusiast from China. It has been three years si
 ## Server Information
 
 > Server address: **sqgmc.com**
-
 > Server port: **19132**
 
 ## Server Website
