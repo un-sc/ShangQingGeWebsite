@@ -17,6 +17,12 @@ var json = [{
     "name": "Server Rules",
     "icon": "<i class='mdi mdi-book-open'></i>",
     "url": "./rules.html"
+},
+{
+    "name": "Lianan's Blog",
+    "icon": "<i class='mdi mdi-blogger'></i>",
+    "url": "https://blog.unsc.dev",
+    "target": "_blank"
 }
 ]
 /*递归实现获取无级树数据并生成DOM结构*/
@@ -25,10 +31,10 @@ var forTree = function (o) {
     for (var i = 0; i < o.length; i++) {
         var urlstr = "";
         try {
-            if (typeof o[i]["url"] == "undefined") {    
-                urlstr = "<li class='nav-item'>" + o[i]["name"] + "</li>";
-            } else {
+            if (typeof o[i]["target"] == "undefined") {    
                 urlstr = "<li class='nav-item'><a href=" + o[i]["url"] + ">" + o[i]["icon"] + o[i]["name"] + "</a></li>";
+            } else {
+                urlstr = "<li class='nav-item'><a href=" + o[i]["url"] + " target=" + o[i]["target"] + ">" + o[i]["icon"] + o[i]["name"] + "</a></li>";
             }
             str += urlstr;
             if (o[i]["list"] != null) {
