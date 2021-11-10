@@ -55,32 +55,7 @@
         </div>
         <div class="lyear-layout-sidebar-scroll">
           <nav class="sidebar-main">
-            <ul class="nav nav-drawer">
-              <li class="nav-item">
-                <a href="index.html">
-                  <i class="mdi mdi-home"></i>
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="about.html">
-                  <i class="mdi mdi-information"></i>
-                  About
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="join.html">
-                  <i class="mdi mdi-lan-connect"></i>
-                  Join the server
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="rules.html">
-                  <i class="mdi mdi-book-open"></i>
-                  Server rules
-                </a>
-              </li>
-            </ul>
+            <ul id="menuTree" class="nav nav-drawer"></ul>
           </nav>
           <div class="sidebar-footer">
             <p class="copyright">
@@ -173,19 +148,28 @@
                   <p class="lead">The server loads some plugings and has some other additional functions based on the
                     original game.</p>
                   <h4>Additional commands that players can use</h4>
-                  <ul>
-                    <li>/menu - Opening server menu.</li>
-                    <li>/notice - Opening server bulletin board.</li>
-                    <li>/clock - Geting a clock and use the clock to open the server menu.</li>
-                    <li>/signin - Daily check-in.</li>
-                    <li>/here - Sending your current coordinates in the chat bar.</li>
-                    <li>/shop - Opening system store.</li>
-                    <li>/tl - To open the title store page.</li>
-                    <li>/magicalchest - This is a function for operating chests and even selling items.</li>
-                    <li>/tpa - Transfer between players.</li>
-                    <li>/back - Go back to where you last died.</li>
-                    <li>/tpr - Randomly send you to a place in the world.</li>
-                  </ul>
+                  <p><hr />
+                    |==<b>/menu - Opening server menu.</b><br />
+                    |<br />
+                    |==<b>Transfer commands</b><br />
+                    |&emsp;|==/tpa - Transfer between players.<br />
+                    |&emsp;|==/tpr - Randomly send you to a place in the world.<br />
+                    |&emsp;|==/back - Go back to where you last died.<br />
+                    |&emsp;|==/home - Set up a home you can send to.<br />
+                    |&emsp;|==/warp - Common transport point.<br />
+                    |<br />
+                    |==<b>Economic commands</b><br />
+                    |&emsp;|==/shop - Opening system store.<br />
+                    |&emsp;|==/tl - To open the title store page.<br />
+                    |&emsp;|==/land - Player land system.<br />
+                    |<br />
+                    |==<b>Personal operation commandss</b><br />
+                    |&emsp;|==/signin - Daily check-in.<br />
+                    |&emsp;|==/here - Sending your current coordinates in the chat bar.<br />
+                    |&emsp;|==/notice - Opening server bulletin board.<br />
+                    |&emsp;|==/clock - Geting a clock and use the clock to open the server menu.<br />
+                    <hr />
+                  </p>
                   <h4>Repair of adverse features of the game.</h4>
                   <ul>
                     <li>Anti Horion, Hoolbox, etc.</li>
@@ -201,6 +185,8 @@
                     <li>Docking <a href="https://wiki.blackbe.xyz/" target="_blank"
                         rel="noopener noreferrer">BlackBE</a>.
                     </li>
+                    <li>Deputy torch and mobile light source.</li>
+                    <li>Backup world every 6 hours, global backup every 12 hours, and upload important files to the database in real time.</li>
                   </ul>
                 </div>
               </div>
@@ -214,7 +200,7 @@
       <!--End 页面主要内容-->
     </div>
   </div>
-
+	<script type="text/javascript" src="js/menuTree.js"></script>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>

@@ -55,32 +55,7 @@
         </div>
         <div class="lyear-layout-sidebar-scroll">
           <nav class="sidebar-main">
-            <ul class="nav nav-drawer">
-              <li class="nav-item">
-                <a href="index.html">
-                  <i class="mdi mdi-home"></i>
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="about.html">
-                  <i class="mdi mdi-information"></i>
-                  About
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="join.html">
-                  <i class="mdi mdi-lan-connect"></i>
-                  Join the server
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="rules.html">
-                  <i class="mdi mdi-book-open"></i>
-                  Server rules
-                </a>
-              </li>
-            </ul>
+            <ul id="menuTree" class="nav nav-drawer"></ul>
           </nav>
           <div class="sidebar-footer">
             <p class="copyright">
@@ -176,7 +151,7 @@
       <!--End 页面主要内容-->
     </div>
   </div>
-
+	<script type="text/javascript" src="js/menuTree.js"></script>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
